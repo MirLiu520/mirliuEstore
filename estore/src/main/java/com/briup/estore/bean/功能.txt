@@ -1,0 +1,22 @@
+-common 共有资源，工具类，
+	utils-工具，mybatis封装工具，数据源
+	-exceptions:用户自定义异常
+-mapper-持久层
+-mybatis 所有映射接口
+-bean 信息载体，域对象，和关系表对应
+service 业务逻辑，接口
+	impl 业务实现
+web web相关处理
+	-servlet 请求处理和跳转
+	-filter 过滤请求，编码验证，登陆过滤
+	-listener 监听
+	-
+
+resouse 系统配置文件
+	mappers mybatis映射文件
+	log4j.properties -日志文件
+	mybatis-config.xml mybatis配置文件
+	mybatis-gennerator-config.xml generator配置
+	
+webapp:webapp的一些资源（静态或动态）、
+

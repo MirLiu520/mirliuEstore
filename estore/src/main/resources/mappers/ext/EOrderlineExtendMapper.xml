@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.briup.estore.mapper.ext.EOrderlineExtendMapper">
+ 
+  <insert id="saveOrderLines" >
+    insert into e_orderline ( num, book_id, 
+      order_id)
+    values 
+    <foreach collection="lines" item="line" separator=",">
+      ( #{line.num,jdbcType=INTEGER}, #{line.book.id,jdbcType=INTEGER}, 
+      #{orderId,jdbcType=INTEGER})
+      </foreach>
+  </insert>
+</mapper>
